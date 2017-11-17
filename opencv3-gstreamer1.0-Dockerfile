@@ -3,7 +3,7 @@ MAINTAINER Junjue Wang <junjuew@cs.cmu.edu>
 
 # Install gstreamer and opencv dependencies
 RUN \ 
-    apt-get -qq update && apt-get -qq upgrade -y && \
+    apt-get update && apt-get upgrade -y && \
     apt-get install -y libgstreamer1.0-0 \
             gstreamer1.0-plugins-base \
             gstreamer1.0-plugins-good \
@@ -13,7 +13,7 @@ RUN \
             gstreamer1.0-doc \
             gstreamer1.0-tools \
             libgstreamer1.0-dev \
-            libgstreamer-plugins-base1.0-dev
+            libgstreamer-plugins-base1.0-dev && \
 
     apt-get install -y \
         wget \
